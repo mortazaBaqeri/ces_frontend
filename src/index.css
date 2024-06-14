@@ -1,0 +1,138 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 50px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --main-theme-color: #E0218A;
+  --sub-theme-color: #EC79B8;
+
+  --form-padding: 10px;
+}
+
+body {
+  margin: 0!important;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  max-width: auto!important;
+  margin: 0!important;
+  padding: 0!important;
+  text-align: center;
+}
+
+.custom-button {
+  background-color: var(--main-theme-color);
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+  color: white;
+  padding: var(--form-padding);
+  font-size: 18px;
+}
+.custom-button:hover {
+  background-color: var(--sub-theme-color);
+}
+
+.main-page {
+  padding: 0 10px;
+}
+
+.custom-input {
+  width: 90%;
+  height: 15px;
+  border-radius: 20px;
+  padding: var(--form-padding);
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  color: white;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: var(--main-theme-color);
+}
+
+.map-area {
+  height: 700px;
+}
+
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.parcel-form {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.parcel-form-input {
+  width: 15%;
+}
+
+.custom-select-input {
+  border-radius: 20px;
+  padding: var(--form-padding);
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.success-checkmark {
+  background-color: var(--main-theme-color);
+  width: 25px;
+  height: 25PX;
+  padding: 40%;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.success-checkmark-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.menu-bar {
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
